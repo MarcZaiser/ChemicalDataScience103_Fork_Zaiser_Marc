@@ -1,0 +1,139 @@
+ChEMBL shape: (71479, 49)
+  Molecule ChEMBL ID       Molecule Name  Molecule Max Phase  Molecular Weight  ...  Action Type  Standard Text Value    Value Modality
+0       CHEMBL315498                 NaN                 NaN            352.37  ...          NaN                  NaN    0.030      NaN
+1          CHEMBL148  IMIPENEM ANHYDROUS                 4.0            299.35  ...          NaN                  NaN    0.250      NaN
+2       CHEMBL108883                 NaN                 NaN            587.59  ...          NaN                  NaN   32.000      NaN
+3        CHEMBL44354         CEFTAZIDIME                 4.0            546.59  ...          NaN                  NaN  256.000      NaN
+4          CHEMBL186            CEFEPIME                 4.0            480.57  ...          NaN                  NaN    0.125      NaN
+
+[5 rows x 49 columns]
+<class 'pandas.DataFrame'>
+RangeIndex: 71479 entries, 0 to 71478
+Data columns (total 49 columns):
+ #   Column                      Non-Null Count  Dtype  
+---  ------                      --------------  -----  
+ 0   Molecule ChEMBL ID          71479 non-null  str    
+ 1   Molecule Name               18334 non-null  str    
+ 2   Molecule Max Phase          16750 non-null  float64
+ 3   Molecular Weight            71479 non-null  float64
+ 4   #RO5 Violations             70758 non-null  float64
+ 5   AlogP                       70758 non-null  float64
+ 6   Compound Key                71469 non-null  str    
+ 7   Smiles                      71459 non-null  str    
+ 8   Standard Type               71479 non-null  str    
+ 9   Standard Relation           69583 non-null  str    
+ 10  Standard Value              69578 non-null  float64
+ 11  Standard Units              69692 non-null  str    
+ 12  pChEMBL Value               0 non-null      float64
+ 13  Data Validity Comment       470 non-null    str    
+ 14  Comment                     1679 non-null   str    
+ 15  Uo Units                    69020 non-null  str    
+ 16  Ligand Efficiency BEI       0 non-null      float64
+ 17  Ligand Efficiency LE        0 non-null      float64
+ 18  Ligand Efficiency LLE       0 non-null      float64
+ 19  Ligand Efficiency SEI       0 non-null      float64
+ 20  Potential Duplicate         71479 non-null  int64  
+ 21  Assay ChEMBL ID             71479 non-null  str    
+ 22  Assay Description           71479 non-null  str    
+ 23  Assay Type                  71479 non-null  str    
+ 24  BAO Format ID               71479 non-null  str    
+ 25  BAO Label                   71479 non-null  str    
+ 26  Assay Organism              71479 non-null  str    
+ 27  Assay Tissue ChEMBL ID      109 non-null    str    
+ 28  Assay Tissue Name           109 non-null    str    
+ 29  Assay Cell Type             17 non-null     str    
+ 30  Assay Subcellular Fraction  0 non-null      float64
+ 31  Assay Parameters            735 non-null    str    
+ 32  Assay Variant Accession     0 non-null      float64
+ 33  Assay Variant Mutation      0 non-null      float64
+ 34  Target ChEMBL ID            71479 non-null  str    
+ 35  Target Name                 71479 non-null  str    
+ 36  Target Organism             71479 non-null  str    
+ 37  Target Type                 71479 non-null  str    
+ 38  Document ChEMBL ID          71479 non-null  str    
+ 39  Source ID                   71479 non-null  int64  
+ 40  Source Name                 71479 non-null  str    
+ 41  Document Journal            70739 non-null  str    
+ 42  Document Year               70744 non-null  float64
+ 43  Cell ChEMBL ID              0 non-null      float64
+ 44  Properties                  7783 non-null   str    
+ 45  Action Type                 0 non-null      float64
+ 46  Standard Text Value         912 non-null    str    
+ 47  Value                       69578 non-null  float64
+ 48  Modality                    0 non-null      float64
+dtypes: float64(18), int64(2), str(29)
+memory usage: 52.4 MB
+
+PubChem shape: (200, 9)
+                                              Smiles       CID  MolecularWeight  ...  HBondAcceptorCount  RotatableBondCount  HeavyAtomCount
+0  Cc1cc(-c2cc3c(cc2F)c(=O)c(C(=O)O)cn3C2CC2)cc(C)n1    121960           352.40  ...                   6                   3              26
+1  C[C@@H](O)[C@H]1C(=O)N2C(C(=O)O)=C(SCCNC=N)C[C...    104838           299.35  ...                   6                   6              20
+2  C[C@H]1c2ccc(NC(=O)[C@@H](N)CCC(N)=O)c(O)c2C(=...  54715855           587.60  ...                  12                   7              42
+3  CC(C)(O/N=C(\C(=O)N[C@@H]1C(=O)N2C(C(=O)[O-])=...   5481173           546.60  ...                  12                   8              37
+4  CO/N=C(\C(=O)N[C@@H]1C(=O)N2C(C(=O)[O-])=C(C[N...   5479537           480.60  ...                  10                   6              32
+
+[5 rows x 9 columns]
+<class 'pandas.DataFrame'>
+RangeIndex: 200 entries, 0 to 199
+Data columns (total 9 columns):
+ #   Column              Non-Null Count  Dtype  
+---  ------              --------------  -----  
+ 0   Smiles              200 non-null    str    
+ 1   CID                 200 non-null    int64  
+ 2   MolecularWeight     200 non-null    float64
+ 3   XLogP               174 non-null    float64
+ 4   TPSA                200 non-null    float64
+ 5   HBondDonorCount     200 non-null    int64  
+ 6   HBondAcceptorCount  200 non-null    int64  
+ 7   RotatableBondCount  200 non-null    int64  
+ 8   HeavyAtomCount      200 non-null    int64  
+dtypes: float64(3), int64(5), str(1)
+memory usage: 26.0 KB
+
+Duplicate PubChem SMILES: 44
+
+Merged shape: (11098, 57)
+  Molecule ChEMBL ID       Molecule Name  Molecule Max Phase  ...  HBondAcceptorCount  RotatableBondCount  HeavyAtomCount
+0       CHEMBL315498                 NaN                 NaN  ...                   6                   3              26
+1          CHEMBL148  IMIPENEM ANHYDROUS                 4.0  ...                   6                   6              20
+2       CHEMBL108883                 NaN                 NaN  ...                  12                   7              42
+3        CHEMBL44354         CEFTAZIDIME                 4.0  ...                  12                   8              37
+4          CHEMBL186            CEFEPIME                 4.0  ...                  10                   6              32
+
+[5 rows x 57 columns]
+
+Cleaned dataset shape: (8400, 60)
+
+Retained source units:
+Standard Units
+ug.ml-1    8400
+Name: count, dtype: int64[pyarrow]
+
+Missing values:
+Assay Subcellular Fraction    8400
+Comment                       8400
+Assay Variant Mutation        8400
+Assay Variant Accession       8400
+Assay Parameters              8400
+Cell ChEMBL ID                8400
+Action Type                   8400
+Standard Text Value           8400
+Modality                      8400
+Ligand Efficiency LLE         8400
+Ligand Efficiency LE          8400
+Ligand Efficiency BEI         8400
+Ligand Efficiency SEI         8400
+pChEMBL Value                 8400
+Assay Cell Type               8398
+dtype: int64
+
+Summary statistics:
+           mic_ug_ml        XLogP
+count    8400.000000  8400.000000
+mean      170.866332    -0.918714
+std      5867.575642     1.736783
+min         0.000010    -7.900000
+25%         0.130000    -1.400000
+50%         2.000000    -1.000000
+75%         8.000000     0.000000
+max    512000.000000    10.000000
