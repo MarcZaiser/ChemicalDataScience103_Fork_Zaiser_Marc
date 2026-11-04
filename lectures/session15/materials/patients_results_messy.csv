@@ -9,3 +9,7 @@ P007,2021/01/07,,Male,125/82,200.0,ninety,typo in glucose
 P008,2021-01-08,46.0,Female,130/85,195.0,100,baseline
 P009,2021-01-09,50.0,female,128/84,,92,-
 P010,2021-01-10,41.0,MALE,132/88,210.0,97,follow-up
+
+
+# Missing values in ChoI and age, Gender and Date not same format, glucose missing value, typo, PatientID is not consistent, 
+# In Notes, 
