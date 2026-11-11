@@ -47,15 +47,15 @@ Useful: findings that have focused importance and scope*
 
 *For **strength of support**:*
 
-*Exceptional: exemplary use of existing approaches that establish new standards for a field*
+*Exceptional: exemplary use of existing approaches that establish new standards for a field* (set a new standard for all future studies)
 
-*Compelling: evidence that features methods, data and analyses more rigorous than the current state of the art*
+*Compelling: evidence that features methods, data and analyses more rigorous than the current state of the art* (came up with new method)
 
-*Convincing: appropriate and validated methodology in line with current state-of-the-art*
+*Convincing: appropriate and validated methodology in line with current state-of-the-art* (made sure that everything was well validated, no weaknesses)
 
-*Solid: methods, data and analyses broadly support the claims with only minor weaknesses*
+*Solid: methods, data and analyses broadly support the claims with only minor weaknesses* (to the best of my ability to judge it seems to be state of the art)
 
-*Incomplete: main claims are only partially supported*
+*Incomplete: main claims are only partially supported* (partly complete but gaps, still not convinced)
 
 *Inadequate: methods, data and analyses do not support the primary claims*
 
