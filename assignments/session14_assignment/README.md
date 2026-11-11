@@ -19,6 +19,27 @@ This assignment is aimed at deepening your RDKit skills and your understanding o
 Which one would be the best feature set to predict your target? Note that for this task, the fingerprints should be represented as matrix, not one single entry like in the dataframe (snippet provided below). Interpret the results!
 8) Repeat for the second dataset - focus on reusable code / functions, so that you can use them for both datasets. Compare the results for the two datasets and discuss!
 
+## Reusable Python solution
+
+The accompanying [`session14_solution.py`](./session14_solution.py) implements the data cleaning, RDKit molecule column, ten SMARTS-based custom features, Morgan fingerprints, all RDKit molecular descriptors, and the random-forest comparisons for both datasets. Run it from the repository root with:
+
+```bash
+python assignments/session14_assignment/session14_solution.py
+```
+
+The E. coli MIC values are strongly right-skewed, so the solution predicts `log10(MIC)`; all MIC rows in the provided sample use `ug.mL-1`. The printed test-set R², RMSE, and MAE allow you to compare the three feature sets within each dataset. In Jupyter, call `display_structure_preview(frame)` on a prepared dataframe to render the RDKit molecule column as images. For example:
+
+```python
+from assignments.session14_assignment.session14_solution import (
+    DATA_DIR,
+    display_structure_preview,
+    load_dataset,
+)
+
+delaney = load_dataset(DATA_DIR / "delaney.csv", "smiles", "logS")
+display_structure_preview(delaney)
+```
+
 ```python
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.model_selection import train_test_split
